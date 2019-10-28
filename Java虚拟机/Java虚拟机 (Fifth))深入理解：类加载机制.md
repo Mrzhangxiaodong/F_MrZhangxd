@@ -6,7 +6,6 @@
   首先， Java 编译器将Java源代码（.java 文件）编译成 Java字节码（.class 文件）。类加载器负责读取 .class 文件（不限于.class文件），并转换成 java.lang.Class类的一个实例。每个这样的实例用来表示一个 class类。所有的类加载器都是 java.lang.ClassLoader类的一个实例。
   
 ## 一、类加载过程
-  
   ![类加载过程](https://github.com/Mrzhangxiaodong/F_MrZhangxd/blob/master/Java%E8%99%9A%E6%8B%9F%E6%9C%BA/images/20191028001.PNG)
   
 ### ☕️ 🍼 1.1 加载
@@ -25,7 +24,8 @@
   给类的静态变量初始化值，不同于准备阶段，此处是使用用于自定义的值进行赋值。
   
 ## 二、双亲委派模型
-  
+
+  ![双亲委派](https://github.com/Mrzhangxiaodong/F_MrZhangxd/blob/master/Java%E8%99%9A%E6%8B%9F%E6%9C%BA/images/20191028002.PNG)
 
   一个类唯一存在虚拟机的判定，是由加载它的类加载器和这个类本身共同决定。如果同一个Class类文件由不同的类加载器加载至虚拟机，那么会存在两个不同的类。
 
